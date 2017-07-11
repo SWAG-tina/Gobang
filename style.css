@@ -1,0 +1,30 @@
+/* 棋盘：15行15列 */
+#grid {
+  width: 321px;
+  height: 321px;
+  background-size: 20px 20px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px),linear-gradient(to bottom,grey 1px,transparent 1px);
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/*棋子：使用 .piece--black 或 .piece--white 决定黑白子，都不用就表示没落子 */
+.piece {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+/* 黑子 */
+.piece--black {
+  background-color: black;
+}
+
+/* 白子 */
+.piece--white {
+  background-color: lightgray;
+}
